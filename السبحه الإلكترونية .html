@@ -1,0 +1,768 @@
+
+ 
+
+<!DOCTYPE html>
+
+ 
+
+<html>
+
+ 
+
+    <head>
+<meta charset="utf-8" />
+ 
+
+        <style>
+
+ 
+
+ 
+
+        </style>
+
+ 
+
+        <title>السبحه الالكترونيه</title>
+
+ 
+
+        <style>
+
+ 
+
+      
+
+ 
+
+        body{
+
+ 
+
+background:#66CCFF
+
+ 
+
+}
+
+ 
+
+ 
+
+*{
+
+ 
+
+    outline: none;
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont{
+
+ 
+
+    width: 200px;
+
+ 
+
+    height: 300px;
+
+ 
+
+    /*border: 1px solid #000;*/
+
+ 
+
+    margin: 1500px 0px 800px 600px;
+
+ 
+
+    transform:scale(6);
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont > div{
+
+ 
+
+    margin: 10px auto;
+
+ 
+
+    position: relative;
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont_up{
+
+ 
+
+    width: 150px;
+
+ 
+
+    height: 100px;
+
+ 
+
+    border-radius: 50px;
+
+ 
+
+    background: #960098;
+
+ 
+
+    z-index: 1;
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont_body{
+
+ 
+
+    position: relative;
+
+ 
+
+    width: 140px;
+
+ 
+
+    height: 150px;
+
+ 
+
+    background: #960098;
+
+ 
+
+    top: -82px;
+
+ 
+
+   
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont_body:after{
+
+ 
+
+    position: absolute;
+
+ 
+
+    content: "";
+
+ 
+
+    width: 80px;
+
+ 
+
+    height: 163px;
+
+ 
+
+    bottom: -6px;
+
+ 
+
+    left: -75px;
+
+ 
+
+    /*border: 1px solid #000;*/
+
+ 
+
+    border-radius: 50%;
+
+ 
+
+    background: #66CCFF;
+
+ 
+
+   
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont_body:before{
+
+ 
+
+    position: absolute;
+
+ 
+
+    content: "";
+
+ 
+
+ width: 80px;
+
+ 
+
+    height: 163px;
+
+ 
+
+    bottom: -6px;
+
+ 
+
+    left: 135px;
+
+ 
+
+    /*border: 1px solid #000;*/
+
+ 
+
+    border-radius: 50%;
+
+ 
+
+    background: #66CCFF;
+
+ 
+
+   
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont_down{
+
+ 
+
+    position: relative;
+
+ 
+
+    width: 148px;
+
+ 
+
+    height: 90px;
+
+ 
+
+    border-radius: 50px;
+
+ 
+
+    background: #960098;
+
+ 
+
+    z-index: 1;
+
+ 
+
+    top: -155px;
+
+ 
+
+}
+
+ 
+
+ 
+
+#screen{
+
+ 
+
+    position: relative;
+
+ 
+
+    width: 80%;
+
+ 
+
+    height: 60px;
+
+ 
+
+    margin-left: 14px;
+
+ 
+
+    top: 10px;
+
+ 
+
+    border-radius: 30px;
+
+ 
+
+    border: inside 2px solid #000;
+
+ 
+
+    box-shadow: 0px 0px 8px .5px #000;
+
+ 
+
+ 
+
+    opacity: .9
+
+ 
+
+}
+
+ 
+
+ 
+
+#display{
+
+ 
+
+    position: relative;
+
+ 
+
+    width: 75%;
+
+ 
+
+    border-radius: 10px;
+
+ 
+
+    height: 30px;
+
+ 
+
+    text-align: right;
+
+ 
+
+    line-height: 30px;
+
+ 
+
+    padding-right: 10px;
+
+ 
+
+    background: #FFF;
+
+ 
+
+    left: 10px;
+
+ 
+
+    top: 15px;
+
+ 
+
+}
+
+ 
+
+ 
+
+button{
+
+ 
+
+    display: block;
+
+ 
+
+    position: absolute;
+
+ 
+
+    z-index: 10;
+
+ 
+
+    box-shadow: 0px 0px 10px #000;
+
+ 
+
+}
+
+ 
+
+ 
+
+#play{
+
+ 
+
+    width: 90px;
+
+ 
+
+    height: 80px;
+
+ 
+
+    border-radius: 50%;
+
+ 
+
+    top: 80px;
+
+ 
+
+    left: 35px;
+
+ background-color:red;
+
+}
+
+ 
+
+ 
+
+#reset{
+
+ 
+
+    width: 50px;
+
+ 
+
+    height: 40px;
+
+ 
+
+    border-radius: 50%;
+
+ 
+
+    top: 40px;
+
+ 
+
+    left: 90px;
+
+ 
+
+}
+
+ 
+
+ 
+
+code{
+
+ 
+
+    font-family: sans-serif;
+
+ 
+
+    font-size: 18px
+
+ 
+
+}
+
+ 
+
+ 
+
+.cont_color{
+
+ 
+
+    position: relative;
+
+ 
+
+    top: -113px;
+
+ 
+
+    left: 60px
+
+ 
+
+}
+
+ 
+
+           
+
+ 
+
+        </style>
+
+ 
+
+       
+
+ 
+
+        <link rel="stylesheet" href="style.css">
+
+ 
+
+    </head>
+
+ 
+
+<body>
+
+ 
+
+<div class="cont">
+
+ 
+
+    <div class="cont_up" id="col">
+
+ 
+
+    <div id="screen">
+
+ 
+
+    <p id="display">0</p>    
+
+ 
+
+    </div>
+
+ 
+
+    </div>
+
+ 
+
+    <div class="cont_body" id="col1">
+
+ 
+
+    <button id="play" onclick="play()">اضغط للتسبيح</button>
+
+ 
+
+    <button id="reset" onclick="reset()">مسح</button>
+
+ 
+
+    </div>
+
+ 
+
+    <div class="cont_down" id="col2"></div>
+
+ 
+
+    <div class="cont_color">
+
+ 
+
+    <code>تغير اللون </code>
+
+ 
+
+    <input type="color" value="#960098" id="cha" onchange="change()">
+
+ 
+
+    </div>
+
+ 
+
+    </div>    
+
+ 
+
+   
+
+ 
+
+ 
+
+   
+
+ 
+
+<script>
+
+ 
+
+// Created by AHMAD ar
+
+ 
+
+ 
+
+var i = 1;
+
+ 
+
+   
+
+ 
+
+/*-------------------------------------------------*/
+
+ 
+
+function play(){
+
+ 
+
+    var x = document.getElementById("display");
+
+ 
+
+   
+
+ 
+
+    x.innerHTML = i;
+
+ 
+
+    i++;
+
+ 
+
+}
+
+ 
+
+       
+
+ 
+
+/*-------------------------------------------------*/
+
+ 
+
+function reset(){
+
+ 
+
+    var x = document.getElementById("display");
+
+ 
+
+   
+
+ 
+
+    x.innerHTML = 0;
+
+ 
+
+    i = 1;
+
+ 
+
+}
+
+ 
+
+/*-------------------------------------------------*/
+
+ 
+
+function change(){
+
+ 
+
+    var x = document.getElementById("col");
+
+ 
+
+    var xx = document.getElementById("col1");
+
+ 
+
+    var xxx = document.getElementById("col2");
+
+ 
+
+    var y = document.getElementById("cha");
+
+ 
+
+   
+
+ 
+
+    x.style.background = y.value;
+
+ 
+
+    xx.style.background = y.value;
+
+ 
+
+    xxx.style.background = y.value;
+
+ 
+
+}
+
+ 
+
+ 
+
+</script>
+
+ 
+
+</body>
+
+ 
+
+</html>
